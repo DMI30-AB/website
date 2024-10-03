@@ -1,0 +1,33 @@
+{{ with .Site.Params.startups }}
+  {{ if .enable }}
+  <section class="site-project" id="project">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>{{ .title }}</h2>
+            <p>{{ .subtitle }}</p>
+          </div>
+        </div>
+        {{ range first 4 (where $.Site.RegularPages "Type" "startups") }}
+        <div class="col-lg-6 col-md-10 mx-auto">
+          <div class="site-project-item">
+            <div class="site-project-item-thumb">
+              <img src="{{ .Params.Image | absURL }}" alt="project-thumb" class="w-100 h-auto" width="500" height="500">
+            </div>
+            <div class="site-project-item-content">
+              <span>{{ delimit .Params.category ", " }}</span>
+              <h3>{{ .Title }}</h3>
+              <a href="{{ .Permalink }}" class="read-more">{{ .Site.Params.startups.view_project }}</a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+        <div class="col-12 text-center text-lg-left">
+          <a href="startups" class="site-project-cta" aria-label="read about more startups we help">{{ .Site.Params.startups.more_works }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}

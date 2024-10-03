@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<section class="site-project-single-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="site-project-single">
+          <div class="mb-5">
+            <h1 class="d-inline">
+              {{ .Title }}
+            </h1>
+            <p class="d-inline">
+              Founding year: <span>{{ .Params.founding_year }}</span>,
+              investment year: <span>{{ .Params.investment_year }}</span>
+              {{ if .Params.exit_year }}, exit year: <span>.Params.exit_year</span>{{ end }}
+            </p>
+          </div>
+          <div class="site-project-single-description">
+            {{ .Content }}
+          </div>
+          <div class="site-project-single-image">
+            {{ range .Params.project_images }}
+            <img src="{{ . | absURL }}" alt="project image">
+            {{ end }}
+          </div>
+          {{ if .NextInSection }}
+          <div class="site-project-single-action">
+            <a href="{{.NextInSection.Permalink}}">
+              <span class="link-area">
+                <span data-bs-text="Next Startup">
+                  Next Startup
+                </span>
+              </span>
+              <img src="{{ "images/to-top.svg" | absURL }}" alt="next startup">
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

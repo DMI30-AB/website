@@ -1,0 +1,17 @@
+# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
+# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+
+# Generated files by hugo
+/public/*
+!/public/.gitkeep
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock

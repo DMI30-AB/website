@@ -1,0 +1,138 @@
+baseURL       = "https://dmi30.com/"
+languageCode  = "en-gb"
+title         = "DMI30"
+theme         = "roxo-hugo"
+summarylength = 25
+
+# Site Menus
+[menu]
+  # Navbar Menus
+  [[menu.nav]]
+    name    = "Home"
+    url     = ""
+    weight  = 1
+  [[menu.nav]]
+    name    = "About"
+    url     = "about"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Startups"
+    url     = "startups"
+    weight  = 3
+#  [[menu.nav]]
+#    name    = "Blog"
+#    url     = "blog"
+#    weight  = 4
+  [[menu.nav]]
+    name    = "Get in touch"
+    url     = "contact"
+    weight  = 5
+
+# Site Params
+[params]
+  logo = "images/DMI30-logo.avif"
+  logo_footer = "images/DMI30-logo-white.avif"
+  custom_stylesheets = []   # [ "scss/my_1.scss", "scss/my_2.scss" ]
+  dateFormat = "1994 FEB 26"
+  # Meta data
+  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
+  author = "DMI30 Holding"
+  # Google Analitycs
+  googleAnalitycsID = "Your ID"
+  fabform  = "https://formsubmit.co/65dc39ab28ae38b463e7aa42f710df21"
+
+  # Contact Form
+  [params.contactForm]
+    placeholder_first_name        = "First Name"
+    placeholder_last_name         = "Last Name"
+    placeholder_email             = "Email"
+    placeholder_project_type      = "Inquire Type"
+    placeholder_about_the_project = "About your startup"
+    send_message                  = "Send Message"
+
+    [[params.contactForm.projectType]]
+      value = "mentorship"
+      title  = "Mentorship"
+    [[params.contactForm.projectType]]
+      value = "investment"
+      title  = "Investment"
+    [[params.contactForm.projectType]]
+    value = "hands-on-help"
+    title  = "Hands on help"
+    [[params.contactForm.projectType]]
+      value = "other"
+      title  = "Other"
+
+  # Navbar Action Button
+  [params.navAction]
+    status  = true
+    name    = "Get in touch"
+    url     = "contact"
+
+
+  # Banner Section
+  [params.banner]
+    enable                = true
+    background_image      = "images/backgrounds/hero-background.avif"
+    heading               = "We help startups succeed"
+    tagline               = ""
+    primary_button        = "Current Startups"
+    primary_button_url    = "startups"
+    secondary_button      = "Connect with Us"
+    secondary_button_url  = "contact"
+
+  [params.blog]
+    read_more             = "read more"
+
+  [params.startups]
+    enable    = true
+    title     = "Startups we help"
+    subtitle  = ""
+    view_project = "view startup"
+    more_works = "MORE STARTUPS"
+    scroll_down = "scroll down"
+
+  [params.call_to_action]
+    enable              = true
+    background_image    = "images/backgrounds/cta-background.avif"
+    title               = "LET’S WORK TOGETHER"
+    primary_button      = "Submit Query"
+    primary_button_url  = "contact"
+    secondary_button    = "Not Convinced"
+    secondary_button_url = "startups"
+
+  [params.footer]
+    params.footer.qr_print = false
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      title   = "Contact Info"
+      address = "Ankargatan 15<br>211 17 Malmö<br>Sweden"
+      phone   = ""
+      email   = ""
+      # Footer Sitemap
+      [params.footer.sitemap]
+        title   = "Sitemap"
+        [[params.footer.sitemap.link]]
+          name = "About Company"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Startups"
+          url  = "startups"
+#        [[params.footer.sitemap.link]]
+#          name = "Blog"
+#          url  = "blog"
+        [[params.footer.sitemap.link]]
+          name = "Contact"
+          url  = "contact"
+      # Footer Social Media
+      [params.footer.social]
+        title   = "Social Media"
+        [[params.footer.social.link]]
+          name = "Linkedin"
+          url  = "https://linkedin.com/company/dmi30-holding-ab"
+      # Footer Service
+      [params.footer.service]
+        title       = "" #"We help startups:"
+        description = "" #"by finding and providing funding<br>mentorship<br>hands on help"
+      [params.footer.back_to_top]
+        description = "Go back to top"

@@ -1,0 +1,8 @@
+enable  : true
+title   : Our current team
+members  :
+  - image       : images/team/oscar-reimer-profile-picture.avif
+    name        : Oscar Reimer
+    designation : CEO
+    linkedin    : https://www.linkedin.com/in/oscarreimer/
+    story       : "Oscar has a long entrepreneurial background having founded his first company 2016, with his latest venture being Debricked. A cybersecurity SaaS company which was sold to Microfocus in 2022.<br><br>Now he helps other startups succeed while continuing his own entrepreneurial journey."

@@ -1,0 +1,4 @@
+enable        : true
+title         : "Who we help"
+client_logos  : 
+  ["images/projects/nygen-logo-white.avif", "images/projects/controla-logo.avif"]

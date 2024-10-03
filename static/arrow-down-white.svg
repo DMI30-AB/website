@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="26.07"
+   height="32.634"
+   viewBox="0 0 26.07 32.634"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="arrow-down-white.svg"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="26.237054"
+     inkscape:cx="13.035"
+     inkscape:cy="16.312807"
+     inkscape:window-width="5054"
+     inkscape:window-height="1371"
+     inkscape:window-x="66"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <g
+     id="download"
+     transform="translate(-3.282)"
+     style="fill:#fefefe;fill-opacity:1">
+    <path
+       id="Path_1"
+       data-name="Path 1"
+       d="M16.317,32.634a.5.5,0,0,1-.5-.5V.5a.5.5,0,0,1,1,0V32.134A.5.5,0,0,1,16.317,32.634Z"
+       fill="#00113e"
+       style="fill:#fefefe;fill-opacity:1" />
+    <path
+       id="Path_2"
+       data-name="Path 2"
+       d="M16.315,32.634h0a.5.5,0,0,1-.354-.146L3.428,19.951a.5.5,0,0,1,.707-.707L16.314,31.427,28.5,19.244a.5.5,0,1,1,.707.707L16.668,32.487A.5.5,0,0,1,16.315,32.634Z"
+       fill="#00113e"
+       style="fill:#fefefe;fill-opacity:1" />
+  </g>
+</svg>
