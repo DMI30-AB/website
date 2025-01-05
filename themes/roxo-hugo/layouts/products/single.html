@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<section class="site-project-single-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <div class="site-project-single">
+          <div class="mb-5">
+            <h1 class="d-inline">
+              {{ .Title }}
+            </h1>
+            <p class="d-inline">
+              Launch year: <span>{{ .Params.product_launcher_year }}</span>
+            </p>
+          </div>
+          <div class="site-project-single-description">
+            {{ .Content }}
+          </div>
+          <!--<div class="site-project-single-image">
+            {{ range .Params.project_images }}
+            <img src="{{ . | absURL }}" alt="project image">
+            {{ end }}
+          </div>-->
+          {{ if .NextInSection }}
+          <div class="site-project-single-action">
+            <a href="{{.NextInSection.Permalink}}">
+              <span class="link-area">
+                <span data-bs-text="Next Product">
+                  Next Product
+                </span>
+              </span>
+              <img src="{{ "images/to-top.svg" | absURL }}" alt="next product">
+            </a>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "call-to-action.html" . }}
+
+{{ end }}

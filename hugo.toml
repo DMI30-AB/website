@@ -19,6 +19,10 @@ summarylength = 25
     name    = "Startups"
     url     = "startups"
     weight  = 3
+  [[menu.nav]]
+    name    = "Products"
+    url     = "products"
+    weight  = 4
 #  [[menu.nav]]
 #    name    = "Blog"
 #    url     = "blog"
@@ -92,6 +96,14 @@ summarylength = 25
     more_works = "MORE STARTUPS"
     scroll_down = "scroll down"
 
+  [params.products]
+    enable    = true
+    title     = "Products we develop"
+    subtitle  = ""
+    view_project = "view product"
+    more_works = "MORE PRODUCTS"
+    scroll_down = "scroll down"
+
   [params.call_to_action]
     enable              = true
     background_image    = "images/backgrounds/cta-background.avif"
@@ -136,3 +148,9 @@ summarylength = 25
         description = "" #"by finding and providing funding<br>mentorship<br>hands on help"
       [params.footer.back_to_top]
         description = "Go back to top"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # Enable rendering HTML
+      unsafe = true
